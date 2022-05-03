@@ -1,0 +1,106 @@
+.Account__Body {
+    height: 45vh;
+    width: 100%;
+    background: var(--color-blue);
+}
+
+.Account__Wrap {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem ;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Account__Parent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Account__Parent li {
+    display: inline-block;
+}
+
+.Account__Parent li a {
+    font-size: .8rem;
+    color: var(--color-orange);
+    transform: translate(3px) scale(1.2);
+    transition: all .8s;
+}
+
+.Account__Parent li a:hover {
+    color: var(--color-white);
+    transform: translate(2px) scale(1);
+    transition: all 1s;
+}
+
+.Account__Icons {
+    display: flex;
+    gap: 0 1rem;
+}
+
+.Account__Icons span {
+    display: inline-block;
+    font-size: 1rem;
+    color: var(--color-orange);
+}
+
+.Account__Footer {
+    text-align: center;
+    color: var(--color-orange);
+}
+
+.Account__Footer p {
+    font-size: .8rem;
+}
+
+@media (min-width: 487px) and (max-width: 769px) {
+    .Account__Wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem 0;
+    }
+    
+    .Account__Parent {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-block-start: 1rem;
+    }
+
+    .Account__Parent li a {
+        font-size: 1rem;
+    }
+
+    .Account__Footer p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .Account__Wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .Account__Parent {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem 3rem;
+        margin: 1.5rem 0;
+    }
+
+    .Account__Parent li a {
+        font-size: 1.2rem;
+    }
+
+    .Account__Icons {
+        margin-bottom: 2rem;
+    }
+
+    .Account__Footer p {
+        font-size: 1.2rem;
+    }
+    
+}

@@ -1,0 +1,77 @@
+.sect {
+  background-image:  url(../../../public/interior/layout.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+
+}
+
+form {
+  display: flex;
+  height: 100%;
+}
+
+.card {
+  position: relative;
+  width: 75%;
+  display: flex;
+  align-items: center;
+}
+
+.card__side {
+  color: #fff;
+  transition: all .8s cubic-bezier(0.56, 0.27, 0, 0.99);
+  position: absolute;
+  left: 20%;
+  border-radius: 10px;
+  box-shadow: 1px 0rem 0rem 20px rgb(0 0 0 / 15%);
+}
+
+.card__side--front {
+  background-color: #fff;
+  width: 100%;
+}
+
+.card__sign--up {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card__sign--up h2 {
+  color: var(--color-orange);
+  font-weight: 400;
+  font-size: .8rem;
+  line-height: 2;
+}
+
+.card__front--name,
+.card__front--email,
+.card__front--phone,
+.card__front--message {
+  line-height: 1.3;
+  display: block;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color-orange);
+  padding: .8rem 1rem;
+  margin-bottom: 1.3rem;
+  width: 90%;
+}
+
+
+textarea {
+  border: 1px solid var(--color-orange);
+  border-radius: 5px;
+  text-align: center;
+  margin: 1.4rem 0;
+}
+
+.btn {
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,131 @@
+.Header__Body {
+    height: 100%;
+    background-image: linear-gradient(to right bottom, rgb(18, 18, 143), rgb(16, 16, 135));
+    transition: all .5s;
+}
+
+.Header__Wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.Header__Home {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .5rem;
+}
+
+.Header__Home span,
+ .Header__Big span,
+  .Header__Mail span {
+    display: block;
+    margin-right: .5rem;
+    font-size: .8rem;
+    color: var(--color-orange);
+    text-align: center;
+}
+
+
+.Header__Big {
+    display: flex;
+    flex-direction: column;
+}
+
+.Header__Number, .Header__Mail {
+    margin-bottom: 1rem;
+}
+
+.Header__Icons {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch
+}
+
+@media screen and (max-width: 486px) {
+
+    .Header__Body {
+        display: flex;
+        align-items: center;
+    }
+
+    .Header__Home,
+     .Header__Number,
+      .Header__Mail,
+       .Header__Icons {
+        word-break: break-all;
+      }
+
+    .Header__Home span, 
+    .Header__Number span,
+    .Header__Mail span,
+    .Header__Icons span {
+        font-size: .8rem;
+        display: inline-block;
+    }
+
+    .Header__Home {
+        margin-inline-end: 7rem;
+    }
+
+    .Header__Icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+}
+
+@media (min-width: 487px) and (max-width: 769px) {
+
+    .Header__Wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .Header__Big {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Header__Big * {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width: 770px) {
+    .Header__Wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .Header__Big {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-block-start: .7rem;
+    }
+
+    .Header__Big  * {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .Header__Home {
+        transform: translateY(.1rem);
+    }
+
+    .Header__Icons {
+        transform: translateY(-.5rem);
+        margin-left: 1.5rem;
+    }
+
+}

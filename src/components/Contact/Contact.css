@@ -1,0 +1,108 @@
+.Contact__Box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Contact__Info {
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact__Info span {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.Contact__Form {
+    height: 100vh;
+    width: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    opacity: 0;
+    transition: all .3s;
+    -ms-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transform: translate(-50%, -50%) scale(.5);
+}
+
+.Contact__Form:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.showModal {
+    width: 75%;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.Contact__Times {
+    position: absolute;
+    right: 0;
+    color: var(--color-orange);
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.Contact__Form--wrap {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    margin-bottom: 1rem;
+}
+
+.Contact__Input--Name,
+ .Contact__Input--Email,
+  .Contact__TextArea {
+    width: 100%;
+    display: block;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: .7rem;
+}
+
+.FullName, .Email, textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: .9rem;
+    padding: .7rem 1rem;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.Contact__Form--wrap button {
+    padding: 0.8rem 1.3rem;
+    background: rgb(94, 62, 3);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin: 0 auto;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 769px) {
+    .Contact__Info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 3rem;
+        align-items: center;
+    } 
+}

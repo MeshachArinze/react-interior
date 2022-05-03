@@ -1,0 +1,87 @@
+.Service__Body {
+    padding: 1rem 1.5rem;
+}
+
+.Service__Wrapper {
+    height: 100%;
+}
+
+.Service__Box--1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.Service__Box--Sub-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Service__Box--Sub-1 h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Service__Box--Sub-1 div {
+    height: 3px;
+    width: 8rem;
+    background-color: var(--color-orange);
+    margin: 0 auto 2rem;
+}
+
+.Service__Box--1 .Service__Img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .6);
+}
+
+.Service__Box--1 .Service__Img img {
+    padding: .5rem;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 486px) {
+    .Service__Box--1 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 487px) and (max-width: 769px) {
+    .Service__Wrapper {
+        padding: 2rem 0;
+    }
+    
+    .Service__Box--1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Service__Box--Sub-1 {
+        display: flex;
+        flex: 2;
+    }
+    
+    .Service__Box--1 .Service__Img {
+        display: flex;
+        margin: 2rem 0;
+        flex: 2;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .Service__Box--1 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .Service__Box--Sub-1 {
+        display: flex;
+        flex: 1;
+    }
+    
+    .Service__Box--1 .Service__Img {
+        display: flex;
+        flex: 1;
+    }
+}

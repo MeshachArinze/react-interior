@@ -1,0 +1,126 @@
+*, 
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    --color-orange: orange;
+    --color-white: white;
+    --color-black: black;
+    --color-blue: linear-gradient(to right bottom, rgb(18, 18, 143), rgb(16, 16, 135));
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    line-height: 1.7;
+    font-size: 62.5%;
+    padding: 1rem 3rem;
+    background-color: rgb(248, 248, 236);
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    word-wrap: break-word;
+    word-spacing: 3.5px;
+    white-space: pre-wrap;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding-inline: 1rem;
+}
+
+h3 {
+    letter-spacing: 1.5px;
+    word-spacing: 2.5px;
+    padding-inline: 2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: .7rem;
+}
+
+
+.btn--white {
+    background-color: orange;
+    color: #fff;
+    font-weight: 300;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    width: 4rem;
+    margin: 0 auto;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--white::after {
+    background-color: #fff;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.2s;
+}
+
+.btn--white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.1) scaleY(1.2);
+    opacity: 0;
+}
+
+.btn--animated {
+    animation: moveInButton 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInButton {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

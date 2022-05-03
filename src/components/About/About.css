@@ -1,0 +1,233 @@
+.About__Body {
+    background: var(--color-orange);
+    height: auto;
+}
+
+.About__Wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.About__Type {
+    display: inline-block;
+    text-align: center;
+}
+
+.About__Type span{
+    text-align: center;
+    padding: .5rem 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: var(--color-white);
+}
+
+.typing {
+    position: relative;
+    margin-top: 3px;
+    width: inherit;
+}
+
+.typing::after {
+    content: "";
+    position: absolute;
+    right: -3.5px;
+    width: 1px;
+    height: 50%;
+    border-right: 2px solid var(--color-white);
+    animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.About__Hold {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 1rem;
+}
+
+.About__Img {
+    width: 78%;
+    margin: 0 auto 2rem auto;
+    position: relative;
+    margin-inline-end: 2.1rem;
+}
+
+.About__Img::after {
+    content: "";
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: var(--color-white);
+    border-radius: 5px;
+    margin-bottom: 5rem;
+}
+
+.About__Img img {
+    max-width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    border: 5px;
+}
+
+.About__Smart {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white);
+    align-self: center;
+}
+
+.About__Smart h2 {
+    color: var(--color-orange);
+    font-weight: 500;
+    text-align: center;
+    padding-block: .5rem;
+}
+
+.About__Smart div {
+    height: 2px;
+    width: 7rem;
+    margin: 0 auto .5rem;
+    background: var(--color-black);
+}
+
+.About__Smart span {
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 2.5px;
+    margin-bottom: 2rem;
+}
+
+.btn--white {
+    background: var(--color-orange);
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 1rem;
+    width: 7rem;
+}
+
+@media screen and (max-width: 486px) {
+    .About__Hold {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .About__Smart h2 {
+        font-size: .8rem;
+        letter-spacing: 2px;
+    }
+
+    .About__Smart span {
+        font-size: .7rem;
+        margin-bottom: 1rem;
+    }
+
+    .About__Smart .btn {
+        padding: .3rem .5rem;
+        margin-bottom: 1rem;
+    }
+
+    .About__Smart .btn--white {
+        font-size: .8rem;
+        width: 6rem;
+    }
+}
+
+@media (min-width: 487px) and (max-width: 769px) {
+    .About__Hold {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1.5rem;
+    }
+
+    .About__Img {
+        display: flex;
+        flex: 1;
+        margin: 1rem;
+    }
+
+    .About__Smart {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin: 1rem 0;
+    }
+
+    .About__Type {
+        margin-block-start: 1rem;
+    }
+
+    .About__Smart h2 {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+    
+    .About__Smart span {
+        font-size: .85rem;
+        margin-bottom: 1rem;
+    }
+    
+    .About__Smart .btn {
+        padding: .3rem .5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .About__Smart .btn--white {
+        font-size: .8rem;
+        width: 6rem;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .About__Sub {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    }
+
+    .About__Img img {
+        height: 100%;
+    }
+
+    .About__Hold {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+    }
+
+    .About__Smart h2 {
+        font-size: .8rem;
+        font-weight: 300;
+        letter-spacing: 1.5px;
+    }
+
+    .About__Smart span {
+        font-size: .7rem;
+    }
+
+    .About__Smart .btn--white {
+        font-size: .7rem;
+        width: 6rem;
+        padding: .3rem .5rem;
+    }
+
+    .About__Smart .btn {
+        margin-bottom: .5rem;
+    }
+}
+
+
+

@@ -1,0 +1,113 @@
+:root {
+  --color-orange: orange;
+  --color-white: white;
+}
+
+.header {
+    max-width: 100%;
+    height: auto;
+}
+
+.header__bg {
+  background-image: linear-gradient(to right bottom, rgb(18, 18, 143), rgb(16, 16, 135));
+}
+
+
+.Nav__body {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+}
+
+.Nav__name {
+  transform: translateY(.5rem);
+}
+
+.Nav__name span:first-child {
+  color: var(--color-orange);
+  font-size: 1.15rem;
+}
+
+.Nav__name span:last-child {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.Nav__sm--btn {
+  display: block;
+  text-align: right;
+  cursor: pointer;
+  transform-origin: top;
+  transform: translateY(-1rem);
+  font-size: 1rem;
+}
+
+.NavUlMenu {
+  height: 0;
+  overflow: hidden;
+  transition: height 1s ease;
+}
+
+.showMenu {
+  height: auto;
+  transition: height 1s ease;
+}
+
+.NavUl {
+  display: block;
+}
+
+.NavUl li{
+  text-align: center;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.NavUl li a:link,
+.NavUl li a:visited {
+    color: var(--color-white);
+    font-size: 1rem;
+    transition: all 1s
+}
+
+.NavUl li a:hover {
+  transform: translateY(-3px);
+  transition: all .8s;
+  color: var(--color-orange);
+}
+
+.NavUl li a:active {
+  transform: translateY(-1.5px);
+}
+
+
+@media screen and (min-width: 769px) {
+
+  .Nav__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .Nav__name {
+    transform: translateY(0);
+  }
+
+  .Nav__sm--btn {
+    display: none;
+  }
+
+  .NavUlMenu {
+    height: 100%;
+  }
+
+  .NavUl {
+    display: flex;
+  }
+
+  .NavUl li {
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+
+}

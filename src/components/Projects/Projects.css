@@ -1,0 +1,166 @@
+.Project__Body {
+    height: 100%;
+    gap: 1.5rem;
+}
+
+.Project__Home {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.Project__Flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.Project__Img {
+    width: 100%;
+    display: flex;
+}
+
+.Project__Name {
+    background-color: var(--color-black);
+    flex: 1;
+    box-shadow: 3px 3px 8px rgba(50, 50, 50, 0.8);
+}
+
+.Project__Name h3  {
+    color: var(--color-white);
+    text-align: center;
+}
+
+.Project__Name div {
+    width: 8rem;
+    margin: auto;
+    height: 2px;
+    background: var(--color-white);
+    margin-bottom: 1.5rem;
+}
+
+.Project__Name p {
+    color: var(--color-white);
+    text-align: center;
+}
+
+.Project__Name .btn--white {
+    display: flex;
+}
+
+.Project__Box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.Project__Box-1, .Project__Box-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Project__Img-1 {
+    width: 100%;
+    display: flex;
+}
+
+.Project__Name-1 {
+    background: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem 1rem;
+    flex: 1;
+}
+
+.Project__Name-1 h3 {
+    color: var(--color-white);
+    text-align: center;
+}
+
+.Project__Name-1 p {
+    color: var(--color-white);
+    text-align: center;
+}
+
+.Project__Name-1 div {
+    width: 8rem;
+    margin: auto;
+    height: 2px;
+    background: var(--color-white);
+    margin-bottom: 1.5rem;
+}
+
+.Project__Name-1 .btn--white {
+    display: flex;
+}
+
+@media screen and (max-width: 486px) {
+    .Project__Body {
+        padding: 0 1.5rem;
+    }
+
+    .Project__Home {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 487px) and (max-width: 769px) {
+    .Project__Flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Project__Img {
+        flex: 1;
+    }
+
+    .Project__Box-1 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .Project__Img-1 {
+        flex: 1;
+    }
+
+    .Project__Name {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .Project__Box-2 {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 770px) {
+
+    .Project__Home {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Project__Flex {
+        flex: 1;
+    }
+
+    .Project__Img {
+        width: 100%;
+    }
+
+    .Project__Name {
+        height: 100%;
+        display: block;
+    }
+
+    .Project__Box {
+        flex: 1;
+    }
+
+    .Project__Name-1 {
+        gap: 0;
+    }
+}
